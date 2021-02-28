@@ -20,7 +20,7 @@ public class SpringDataJPAProductRepositoryAdapter implements ProductRepository 
 	}
 
 	@Override
-	public Collection<FullProductDTO> finAll() {
+	public Collection<FullProductDTO> findAll() {
 		return Arrays.asList(mapper.map(repository.findAll(), FullProductDTO[].class));
 	}
 

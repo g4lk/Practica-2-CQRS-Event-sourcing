@@ -15,7 +15,7 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public Collection<FullProductDTO> getProducts() {
-		return repository.finAll();
+		return repository.findAll();
 	}
 
 	@Override
